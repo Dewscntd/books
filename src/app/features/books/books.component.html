@@ -1,0 +1,10 @@
+<app-layout>
+  <app-search (searchEmitter)="onSearch($event)"></app-search>
+
+  <nz-divider></nz-divider>
+
+  <app-books-display-container
+    [books]="bookItems$ | async"
+    (wishlistAdded)="addToWishlist($event)"
+  ></app-books-display-container>
+</app-layout>

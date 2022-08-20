@@ -1,0 +1,6 @@
+<app-layout>
+<app-wishlist-table
+  [books]="wishListItems$ | async"
+  (deleteFromWishList)="deleteFromWishList($event)"
+></app-wishlist-table>
+</app-layout>

@@ -1,0 +1,20 @@
+<nz-table #basicTable [nzData]="books">
+  <thead>
+  <tr>
+    <th>title</th>
+    <th>authors</th>
+    <th>id</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of basicTable.data">
+    <td>{{ book.volumeInfo.title }}</td>
+    <td>{{ book.volumeInfo.authors }}</td>
+    <td>{{ book.id }}</td>
+    <td>
+      <a (click)="onDeleteFromWishList(book.id)">Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</nz-table>

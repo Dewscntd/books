@@ -1,0 +1,18 @@
+<div nz-row>
+  <div nz-col>
+    <nz-descriptions [nzTitle]="book.volumeInfo?.title" nzLayout="horizontal">
+      <nz-descriptions-item nzTitle="authors">{{book.volumeInfo?.authors}}</nz-descriptions-item>
+      <nz-descriptions-item nzTitle="language">{{book.volumeInfo?.language}}</nz-descriptions-item>
+    </nz-descriptions>
+  </div>
+  <div nz-col>
+    <nz-descriptions>
+      <nz-descriptions-item nzTitle="maturity rating">{{book.volumeInfo?.maturityRating}}</nz-descriptions-item>
+      <nz-descriptions-item nzTitle="categories">{{book.volumeInfo?.categories}}</nz-descriptions-item>
+  <nz-descriptions-item nzTitle="published date">{{book.volumeInfo?.publishedDate}}</nz-descriptions-item>
+    </nz-descriptions>
+  </div>
+</div>
+<nz-descriptions>
+  <nz-descriptions-item nzTitle="description">{{book.volumeInfo?.description}}</nz-descriptions-item>
+</nz-descriptions>

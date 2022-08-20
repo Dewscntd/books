@@ -1,0 +1,7 @@
+<nz-input-group [nzSuffix]="suffixIconSearch" [formGroup]="form">
+  <input type="text" nz-input placeholder="input search text" formControlName="search"/>
+</nz-input-group>
+
+<ng-template #suffixIconSearch>
+  <i nz-icon nzType="search"></i>
+</ng-template>
