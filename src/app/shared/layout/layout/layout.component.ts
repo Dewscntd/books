@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {NzNotificationService} from 'ng-zorro-antd/notification';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [{provide: NzNotificationService, useClass: NzNotificationService}]
 })
 export class LayoutComponent implements OnInit {
